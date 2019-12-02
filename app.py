@@ -33,6 +33,14 @@ def playlists_index():
     """Show all playlists."""
     return render_template('playlists_index.html', playlists=playlists.find())
 
+    # playlists = [
+    #     {"title": "New Playlists", "description": "hello there, blah blahsajflasf", "url": "www.google.com"},
+    #     {"title": "New Playlists", "description": "hello there, blah blahsajflasf", "url": "www.google.com"},
+    #     {"title": "New Playlists", "description": "hello there, blah blahsajflasf", "url": "www.google.com"},
+    #     {"title": "New Playlists", "description": "hello there, blah blasajflasfh", "url": "www.google.com"}
+    # ]
+    # return render_template('playlists_index.html', playlists=playlists)
+
 @app.route('/playlists/new')
 def playlists_new():
     """Create a new playlist."""
