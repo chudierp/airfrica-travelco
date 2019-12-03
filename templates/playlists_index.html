@@ -4,12 +4,24 @@
 {% block content %}
 <h1>Playlists</h1>
 
+<!-- <br>
+<h4>Trending</h4> -->
+
 <!-- Add the following classes to their appropriate elements  -->
-    <div class='row'>
+    <div class='row mt-5'>
         {% for playlist in playlists %}
             <div class='col-md-3'>
-                <h2><a href='/playlists/{{ playlist._id }}'>{{ playlist.title }}</a></h2>
-                <small>{{ playlist.description }}</small>
+                
+                    <h2><a href='/playlists/{{ playlist._id }}'>{{ playlist.title }}</a></h2>
+                    
+                    <small>{{ playlist.description }}</small>
+                    
+                    {% for video in playlist.videos %}
+                    <div class="card"><div class="card-body">
+                    <iframe width="301" height="260" src="{{ video }}"></iframe>
+                    </div></div>
+                    {% endfor %}
+                
             </div>
         {% endfor %}
     </div>
