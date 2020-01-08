@@ -6,11 +6,47 @@
 
 
 <!-- Add the following classes to their appropriate elements  -->
-<img src="https://images-na.ssl-images-amazon.com/images/I/51Uo9TJE5iL.jpg" alt="beautiful Kenya"> 
 
-<div class="container">
+
+            <style>
+                .img-container {
+                    display: flex;
+                    flex-direction: row;
+                    width: 600px;
+                    
+
+                }
+
+                .img-container > div {
+                    margin: 0 !important;
+                    padding: 1em !important;
+                    width: 1000px !important;
+                    padding-top: 100px !important;
+                }
+
+                
+            </style>
+        <div class='row mt-5'> 
+                <div class='col-md-6'>
+                    <div class="img-container">   
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51Uo9TJE5iL.jpg" alt="beautiful Kenya">
+                        <div class="col-md-6 offset-md-3 col-16 newsletter-main bg-light p-5">           
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <h2 class="mb-3 mt-3"><strong>NEWSLETTER</strong></h2>
+                                    <p class="text-secondary">Subscribe to our newsletter to receive exclusive offers every week.</p>
+                            <form>
+                                      <div class="form-group">
+                                        <input type="email" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email address">
+                                      </div>
+                                      <button type="submit" class="btn btn-dark form-control rounded-0"><strong>SUBSCRIBE</strong></button>
+                                    </form>
+                                </div>             
+                    </div>                 
+                    </div>
+                </div>
+<!-- <div class="container">
 		<div class="row">
-			<div class="col-md-6 offset-md-3 col-12 newsletter-main bg-light p-5">
+        <div class="col-md-6 offset-md-3 col-16 newsletter-main bg-light p-5">
 				<div class="row">
 					<div class="col-md-12 col-12 text-center heading">
 						<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -30,7 +66,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
     <div class='row mt-5'> 
         {% for playlist in playlists %}
