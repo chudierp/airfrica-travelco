@@ -8,6 +8,7 @@
 <!-- Add the following classes to their appropriate elements  -->
 
     <div class='row mt-5'> 
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51Uo9TJE5iL.jpg" alt="beautiful Kenya">
         {% for playlist in playlists %}
             <div class='col-md-6'>
                 
@@ -20,6 +21,11 @@
                     <!-- <iframe width="601" height="260" src="{{ video }}"></iframe> -->
                     <!-- </div></div> -->
                     {% endfor %}
+                    <!-- timestamp -->
+                    {% if playlist.created_at %}
+                    <p class='text-muted'>Created on {{ playlist.created_at.strftime('%A, %d %B, %Y') }}</p>
+                        at {{ playlist.created_at.strftime('%I:%M %p') }}</p>
+                    {% endif %}
                 </div>
             </div>
         {% endfor %}
