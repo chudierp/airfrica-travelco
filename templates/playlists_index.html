@@ -9,7 +9,7 @@
 
     <div class='row mt-5'> 
         {% for playlist in playlists %}
-            <div class='col-md-3'>
+            <div class='col-md-6'>
                 
                     <h2><a href='/playlists/{{ playlist._id }}'>{{ playlist.title }}</a></h2>
                     
@@ -17,7 +17,7 @@
                 <div class="embed-responsive embed-responsive-1by1">
                     {% for video in playlist.videos %}
                     <!-- <div class="card"><div class="card-body"> -->
-                    <iframe width="601" height="260" src="{{ video }}"></iframe>
+                    <!-- <iframe width="601" height="260" src="{{ video }}"></iframe> -->
                     <!-- </div></div> -->
                     {% endfor %}
                 </div>
