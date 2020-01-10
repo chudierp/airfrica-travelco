@@ -16,7 +16,7 @@ def video_url_creator(id_lst):
     videos = []
     for vid_id in id_lst:
         # We know that embedded YouTube videos always have this format
-        video = 'https://youtube.com/embed/' + vid_id
+        video = 'https://youtube.com/embed/&autoplay=1&loop=1&playlist=j-EQgzyoXMk&showinfo=0&controls=0&autohid=1' + vid_id
         videos.append(video)
     return videos
 
@@ -60,6 +60,7 @@ def playlists_submit():
     playlist = {
         'title': request.form.get('title'),
         'description': request.form.get('description'),
+        'url': request.form.get('url'),
         'videos': videos,
         'video_ids': video_ids,
         'created_at': datetime.now()

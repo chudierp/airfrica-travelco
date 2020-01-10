@@ -18,5 +18,12 @@
         <p class='text-muted'>Add the ID of the videos you want to include in your playlist. Separate with a newline.</p>
         <textarea class='form-control' id='playlist-video-ids' name='video_ids' rows='10' />{{ "\n".join(playlist.video_ids) }}</textarea>
     </div>
+
+    <!-- URL -->
+    <div class='form-group'>
+            <label for='url'>Url</label><br>
+            <input class='form-control' id='url' type='text' name='url' value='{{ playlist.url }}' />
+    </div>
+
 </fieldset>
 
