@@ -27,23 +27,23 @@
                 
             </style>
         <div class='row mt-5'> 
-                <div class='col-md-6'>
-                    <div class="img-container">   
+            <div class='col-md-6'>
+                <div class="img-container">   
                         <img src="https://images-na.ssl-images-amazon.com/images/I/51Uo9TJE5iL.jpg" alt="beautiful Kenya">
-                        <div class="col-md-6 offset-md-3 col-16 newsletter-main bg-light p-5">           
+                    <div class="col-md-6 offset-md-3 col-16 newsletter-main bg-light p-5">           
                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                                    <h2 class="mb-3 mt-3"><strong>NEWSLETTER</strong></h2>
-                                    <p class="text-secondary">Subscribe to our newsletter to receive exclusive offers every week.</p>
-                            <form>
-                                      <div class="form-group">
-                                        <input type="email" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email address">
-                                      </div>
-                                      <button type="submit" class="btn btn-dark form-control rounded-0"><strong>SUBSCRIBE</strong></button>
-                                    </form>
-                                </div>             
-                    </div>                 
-                    </div>
-                </div>
+                                <h2 class="mb-3 mt-3"><strong>NEWSLETTER</strong></h2>
+                                <p class="text-secondary">Subscribe to our newsletter to receive exclusive offers every week.</p>
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email address">
+                            </div>
+                                <button type="submit" class="btn btn-dark form-control rounded-0"><strong>SUBSCRIBE</strong></button>
+                        </form>
+                    </div>             
+                </div>                 
+            </div>
+        </div>
 <!-- <div class="container">
 		<div class="row">
         <div class="col-md-6 offset-md-3 col-16 newsletter-main bg-light p-5">
@@ -79,13 +79,13 @@
                     <p class='text-muted'>Created on {{ playlist.created_at.strftime('%A, %d %B, %Y') }}</p>
                         at {{ playlist.created_at.strftime('%I:%M %p') }}</p>
                     {% endif %}
-                <!-- <div class="embed-responsive embed-responsive-1by1"> -->
-                    <!-- {% for video in playlist.videos %} -->
-                    <!-- <div class="card"><div class="card-body"> -->
-                    <!-- <iframe width="601" height="260" src="{{ video }}"></iframe> -->
-                    <!-- </div></div> -->
-                    <!-- {% endfor %} -->
-                    <!-- timestamp -->
+                <!-- <div class="embed-responsive embed-responsive-21by9"> -->
+                    {% for video in playlist.videos %}
+                        <div class="card"><div class="card-body">
+                            <iframe width="401" height="260" src="{{ video }}"></iframe>
+                        </div></div>
+                    {% endfor %}
+                    
                     
                 <!-- </div> -->
             </div>
